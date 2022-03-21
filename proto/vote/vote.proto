@@ -1,0 +1,14 @@
+syntax = "proto3";
+package cosmonaut.vote.vote;
+
+// this line is used by starport scaffolding # proto/tx/import
+
+option go_package = "github.com/cosmonaut/vote/x/vote/types";
+
+message Vote {
+  string creator = 1;
+  uint64 id = 2;
+  string name = 3;
+}
+
+
